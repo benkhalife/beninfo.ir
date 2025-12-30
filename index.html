@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رزومه بنیامین خلیفه</title>
+    <title>رزومه - توسعه‌دهنده Full-Stack</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -195,6 +195,45 @@
             font-size: 0.9rem;
             color: var(--accent-secondary);
             margin-top: 1rem;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+        }
+
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            color: var(--text-primary);
+            border-color: var(--accent-primary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.15);
+        }
+
+        .contact-item svg {
+            width: 20px;
+            height: 20px;
+            color: var(--accent-secondary);
         }
 
         /* Links Section */
@@ -551,6 +590,17 @@
                 grid-template-columns: 1fr;
             }
 
+            .contact-info {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1rem;
+                padding: 1.5rem;
+            }
+
+            .contact-item {
+                justify-content: center;
+            }
+
             .links-section {
                 flex-direction: column;
                 align-items: center;
@@ -672,6 +722,28 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
+        <section class="fade-in delay-1">
+            <div class="section-header">
+                <div class="section-icon">📬</div>
+                <h2 class="section-title">راه‌های ارتباطی</h2>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:benkhalifedev@gmail.com" class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span>benkhalifedev@gmail.com</span>
+                </a>
+                <a href="tel:+989193681670" class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span dir="ltr">0919-368-1670</span>
+                </a>
+                <a href="https://t.me/benyaminir" target="_blank" class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    <span dir="ltr">@benyaminir</span>
+                </a>
+            </div>
+        </section>
+
         <!-- Experience Timeline -->
         <section class="fade-in delay-2">
             <div class="section-header">
@@ -782,8 +854,7 @@
         </section>
 
         <!-- Open Source Projects Section -->
-        <!-- Open Source Projects Section -->
-<section class="fade-in delay-4">
+        <section class="fade-in delay-4">
     <div class="section-header">
         <div class="section-icon">🚀</div>
         <h2 class="section-title">پروژه‌های متن‌باز</h2>
@@ -853,6 +924,7 @@
         <!-- Footer -->
         <footer class="fade-in delay-5">
             <p class="footer-text">
+                ساخته شده با ❤️ | 
                 <a href="https://github.com/benkhalife" target="_blank">GitHub</a>
             </p>
         </footer>
