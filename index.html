@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رزومه - توسعه‌دهنده Full-Stack</title>
+    <title>رزومه بنیامین خلیفه</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -392,6 +392,7 @@
             background: radial-gradient(circle at bottom right, var(--accent-glow), transparent 70%);
             opacity: 0;
             transition: opacity 0.3s ease;
+            pointer-events: none;
         }
 
         .project-card:hover {
@@ -437,6 +438,8 @@
             text-decoration: none;
             font-size: 0.9rem;
             transition: all 0.2s ease;
+            position: relative;
+            z-index: 2;
         }
 
         .project-link:hover {
@@ -625,7 +628,7 @@
                     <div class="avatar">BK</div>
                 </div>
                 <div class="header-content">
-                    <h1>توسعه‌دهنده Full-Stack</h1>
+                    <h1>بنیامین خلیفه</h1>
                     <div class="title-badge">برنامه‌نویس حرفه‌ای وب و موبایل</div>
                     <div class="experience-badge">
                         <span>🚀</span>
@@ -778,35 +781,50 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section class="fade-in delay-4">
+        <!-- Open Source Projects Section -->
+        <!-- Open Source Projects Section -->
+<section class="fade-in delay-4">
+    <div class="section-header">
+        <div class="section-icon">🚀</div>
+        <h2 class="section-title">پروژه‌های متن‌باز</h2>
+    </div>
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-icon">📦</div>
+            <h3 class="project-title">ZogJS</h3>
+            <p class="project-desc">
+                کتابخانه جاوااسکریپت مینیمال برای ساخت رابط‌های کاربری واکنش‌گرا (Reactive UI). 
+                با قالب‌های تمیز و اعلانی، بدون هیچ وابستگی خارجی و بدون نیاز به مرحله بیلد. 
+                حجم فوق‌العاده کم با عملکرد بالا.
+            </p>
+            <a href="https://zogjs.com" target="_blank" class="project-link">
+                مشاهده پروژه
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+        </div>
+        <div class="project-card">
+            <div class="project-icon">🌐</div>
+            <h3 class="project-title">Webrium Framework</h3>
+            <p class="project-desc">
+                فریمورک PHP فوق‌سبک و سریع برای توسعه وب مدرن. 
+                مجهز به FoxDB ORM، احراز هویت JWT، یکپارچگی کامل با Vite و Tailwind CSS، 
+                سیستم قالب‌بندی Zog با رندرینگ سمت سرور و Hot Reload.
+            </p>
+            <a href="https://webrium.net" target="_blank" class="project-link">
+                مشاهده پروژه
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+        <!-- Personal Projects Section -->
+        <section class="fade-in delay-5">
             <div class="section-header">
-                <div class="section-icon">🚀</div>
-                <h2 class="section-title">پروژه‌های متن‌باز</h2>
+                <div class="section-icon">💡</div>
+                <h2 class="section-title">پروژه‌های شخصی</h2>
             </div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">📦</div>
-                    <h3 class="project-title">ZogJS</h3>
-                    <p class="project-desc">
-                        یک کتابخانه جاوااسکریپت برای توسعه سریع‌تر و آسان‌تر پروژه‌های وب
-                    </p>
-                    <a href="https://zogjs.com" target="_blank" class="project-link">
-                        مشاهده پروژه
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">🌐</div>
-                    <h3 class="project-title">Webrium Framework</h3>
-                    <p class="project-desc">
-                        فریمورک طراحی سایت برای ایجاد وب‌سایت‌های مدرن و سریع
-                    </p>
-                    <a href="https://webrium.net" target="_blank" class="project-link">
-                        مشاهده پروژه
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-                    </a>
-                </div>
                 <div class="project-card">
                     <div class="project-icon">💻</div>
                     <h3 class="project-title">NitroCode</h3>
@@ -835,7 +853,6 @@
         <!-- Footer -->
         <footer class="fade-in delay-5">
             <p class="footer-text">
-                ساخته شده با ❤️ | 
                 <a href="https://github.com/benkhalife" target="_blank">GitHub</a>
             </p>
         </footer>
